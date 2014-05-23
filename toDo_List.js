@@ -5,12 +5,13 @@ function addText() {
 	var someText = answerField.value;
 	var txt = document.createTextNode(someText);
 	div.appendChild(txt);
-	var elementAlreadyOnPage = document.getElementById("wrap");
-	elementAlreadyOnPage.appendChild(div);
+	var wrapper = document.getElementById("wrap");
+	wrapper.appendChild(div);
 	var image = document.createElement('img');
 	image.setAttribute('src', 'close.png');
+	image.setAttribute('class', 'kartynka');
 	var imageOnPage = document.getElementById("wrap");
-	imageOnPage.appendChild(image);
+	div.appendChild(image);
 	answerField.value = '';
 	
 
