@@ -15,14 +15,18 @@ function addText(){
 	image.setAttribute('src', 'close.png');
 	image.setAttribute('class', 'kartynka');
 	image.setAttribute('id', 'button' + counter);
+	image.setAttribute('onclick', 'deleteRow(this.getAttribute("id"));');
 	div.appendChild(image);
 	answerField.value = '';
 }
 
 function deleteRow(button_id){
-	var wrapper = document.getElementById("wrapper");
-	var button = document.getElementById(button_id);
-	var div = button;
-	button.div.removeChild(button);
+	var wrapper = document.getElementById("wrap");
+	var button = document.getElementById("button_id");
+	var deleteRow  = document.getElementById('button' + counter).parentNode;
 	
+	
+	//alert(deleteRow.parentNode.id);
+    wrapper.removeChild(deleteRow);
+
 }
