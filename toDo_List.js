@@ -23,10 +23,7 @@ function addText(){
 function deleteRow(button_id){
 	var wrapper = document.getElementById("wrap");
 	var button = document.getElementById(button_id);
-	var deleteRow  = button.parentNode;
-	
-	
-	//alert(deleteRow.parentNode.id);
-    wrapper.removeChild(deleteRow);
+	var deleteRow = button.parentNode;
+	wrapper.removeChild(deleteRow);
 
 }
