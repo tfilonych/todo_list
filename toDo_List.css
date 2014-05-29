@@ -51,3 +51,15 @@ body{
 	
 
 }
+#leftFlower{
+		position: fixed;
+		left: 200px;
+		top: 300px;
+	
+}
+#rightFlower{
+		position: fixed;
+		right: 200px;
+		top: 300px;
+	
+}
