@@ -16,9 +16,23 @@ function addText(){
 	image.setAttribute('class', 'kartynka');
 	image.setAttribute('id', 'button' + counter);
 	image.setAttribute('onclick', 'deleteRow(this.getAttribute("id"));');
+	image.setAttribute('onmouseover', 'hover(this)');
+	image.setAttribute('onmouseout', 'unhover(this)');
 	div.appendChild(image);
 	answerField.value = '';
 }
+
+function hover(image2){
+		image2.setAttribute('src', 'close_hover.png');
+		image2.setAttribute('class', 'image-hover');
+	}
+	
+function unhover(image1){
+		image1.setAttribute('src', 'close.png');
+	}
+	
+	
+
 
 function deleteRow(button_id){
 	var wrapper = document.getElementById("wrap");
@@ -26,4 +40,13 @@ function deleteRow(button_id){
 	var deleteRow = button.parentNode;
 	wrapper.removeChild(deleteRow);
 
+}
+
+function pressEnter(evt){
+	//alert(evt.which + " " + evt.keyCode);
+	var charCode = (typeof evt.which === "number") ? evt.which : evt.keyCode;
+	if (charCode == 13){
+		addText();
+	} 
+	
 }
