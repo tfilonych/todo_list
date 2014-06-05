@@ -12,7 +12,7 @@ function addText(){
 	var wrapper = document.getElementById("wrap");
 	wrapper.appendChild(div);
 	var image = document.createElement('img');
-	image.setAttribute('src', 'close.png');
+	image.setAttribute('src', 'close_hover.png');
 	image.setAttribute('class', 'kartynka');
 	image.setAttribute('id', 'button' + counter);
 	image.setAttribute('onclick', 'deleteRow(this.getAttribute("id"));');
@@ -23,17 +23,15 @@ function addText(){
 }
 
 function hover(image2){
-		image2.setAttribute('src', 'close_hover.png');
+		image2.setAttribute('src', 'close.png');
 		image2.setAttribute('class', 'image-hover');
 	}
 	
 function unhover(image1){
-		image1.setAttribute('src', 'close.png');
+		image1.setAttribute('src', 'close_hover.png');
+		image1.setAttribute('class', 'image-unhover');
 	}
 	
-	
-
-
 function deleteRow(button_id){
 	var wrapper = document.getElementById("wrap");
 	var button = document.getElementById(button_id);
