@@ -1,4 +1,4 @@
 todo_list
 =========
 
-Tanya's todo application to learn JavaScriptjhvfgfcxjhbjbnkjbjnhgvnbgv
+Tanya's todo application to learn JavaScript
